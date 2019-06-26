@@ -1,4 +1,4 @@
-require 'pry' #!
+require 'pry'
 
 class MotivationTracker
   def motiv_tracker(num)
