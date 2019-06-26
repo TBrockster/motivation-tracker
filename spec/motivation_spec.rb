@@ -13,4 +13,10 @@ describe MotivationTracker do
     mmt.motiv_tracker(5)
     expect(mmt.show_motiv). to eq [5]
   end
+  it 'Expected to return an array of previously input Motivation Scores' do
+    mmt = MotivationTracker.new
+    mmt.motiv_tracker(5)
+    mmt.motiv_tracker(9)
+    expect(mmt.show_motiv). to eq [5, 9]
+  end
 end
